@@ -1,1 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Us Two</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --cream: #fffaf4;
+      --paper: #fffdf9;
+      --ink: #48353d;
+      --muted: #8b737f;
+      --rose: #dd5c7e;
+      --rose-dark: #bf3f63;
+      --pink: #ffe2ea;
+      --line: #f0d9e2;
+    }
 
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Quicksand", system-ui, sans-serif;
+      background: var(--cream);
+      color: var(--ink);
+      line-height: 1.7;
+    }
+
+    header {
+      text-align: center;
+      padding: clamp(3rem, 8vw, 6rem) 1rem;
+      background: radial-gradient(circle at top, var(--pink), var(--cream));
+    }
+
+    header h1 {
+      font-family: "Caveat", cursive;
+      font-size: clamp(4rem, 12vw, 8rem);
+      margin: 0;
+      line-height: 1;
+    }
+
+    header p {
+      font-size: clamp(1.1rem, 2vw, 1.4rem);
+      color: var(--muted);
+      margin: 0.8rem 0 0;
+    }
+
+    .chapter-nav {
+      position: sticky;
+      top: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.6rem;
+      padding: 0.8rem 1rem;
+      background: rgba(255, 253, 249, 0.9);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--line);
+      z-index: 10;
+    }
+
+    .chapter-nav a {
+      text-decoration: none;
+      color: var(--muted);
+      font-weight: 600;
+      padding: 0.4rem 0.9rem;
+      border-radius: 999px;
+      transition: all 0.2s ease;
+    }
+
+    .chapter-nav a:hover {
+      background: var(--pink);
+      color: var(--rose-dark);
+    }
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    section {
+      padding: clamp(4rem, 12vw, 8rem) 0;
+      border-bottom: 1px dashed var(--line);
+      scroll-margin-top: 90px;
+    }
+
+    section:last-of-type {
+      border-bottom: none;
+    }
+
+    .chapter-num {
+      display: inline-block;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      color: var(--rose);
+    }
+
+    h2 {
+      font-family: "Caveat", cursive;
+      font-size: clamp(2.8rem, 8vw, 4.6rem);
+      margin: 0.4rem 0 1rem;
+      line-height: 1;
+    }
+
+    .lead {
+      font-size: clamp(1.05rem, 2vw, 1.2rem);
+      color: var(--muted);
+      margin-top: 0;
+    }
+
+    p {
+      margin: 1rem 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1rem;
+      color: var(--muted);
+    }
+
+    .heart {
+      color: var(--rose);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEAD SECTION -->
+  <header id="top">
+    <h1>Us Two</h1>
+    <p>a little book of our love</p>
+  </header>
+
+  <!-- CHAPTERS NAV -->
+  <nav class="chapter-nav">
+    <a href="#chapter-1">Chapter 1: How We Met</a>
+    <a href="#chapter-2">Chapter 2: Our Adventures</a>
+    <a href="#chapter-3">Chapter 3: Our Favorites</a>
+    <a href="#chapter-4">Chapter 4: Inside Jokes</a>
+    <a href="#chapter-5">Chapter 5: The Future</a>
+  </nav>
+
+  <main>
+    <!-- CHAPTER 1 -->
+    <section id="chapter-1">
+      <span class="chapter-num">Chapter 1</span>
+      <h2>How We Met</h2>
+      <p class="lead">The very beginning of us.</p>
+      <p>Write all about the first time you talked, your first date, or the moment you knew something was different here.</p>
+    </section>
+
+    <!-- CHAPTER 2 -->
+    <section id="chapter-2">
+      <span class="chapter-num">Chapter 2</span>
+      <h2>Our Adventures</h2>
+      <p class="lead">The places we've gone and the memories we've made.</p>
+      <p>Write about road trips, walks, late night drives, or any adventure that stuck with you here.</p>
+    </section>
+
+    <!-- CHAPTER 3 -->
+    <section id="chapter-3">
+      <span class="chapter-num">Chapter 3</span>
+      <h2>Our Favorites</h2>
+      <p class="lead">The things we share.</p>
+      <p>Write your favorite foods, songs, shows, games, or anything that you both love here.</p>
+    </section>
+
+    <!-- CHAPTER 4 -->
+    <section id="chapter-4">
+      <span class="chapter-num">Chapter 4</span>
+      <h2>Inside Jokes</h2>
+      <p class="lead">Only we would get these.</p>
+      <p>Write all of your silly little jokes here. The ones that make you laugh no matter how many times you've heard them.</p>
+    </section>
+
+    <!-- CHAPTER 5 -->
+    <section id="chapter-5">
+      <span class="chapter-num">Chapter 5</span>
+      <h2>The Future</h2>
+      <p class="lead">Our dreams together.</p>
+      <p>Write about the things you're excited to do together. Big or small, it all goes here.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>made with <span class="heart">♥</span> for us two</p>
+    <p><a href="#top">back to the beginning</a></p>
+  </footer>
+
+</body>
+</html>
