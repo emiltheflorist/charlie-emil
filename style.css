@@ -393,3 +393,291 @@ a {
   color: var(--muted);
 }
 
+
+/* =================================
+   OUR RELATIONSHIP TIMELINE
+================================= */
+
+.timeline-page {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 0 1.5rem 4rem;
+}
+
+/* HERO */
+
+.timeline-hero {
+  text-align: center;
+  padding: 5rem 1rem 3rem;
+}
+
+.timeline-decoration {
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.timeline-label {
+  display: inline-block;
+  color: var(--rose-dark);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+.timeline-hero h1 {
+  font-size: clamp(3.5rem, 10vw, 6rem);
+  line-height: 1;
+  margin: 1rem 0;
+}
+
+.timeline-subtitle {
+  color: var(--muted);
+  font-size: 1.1rem;
+}
+
+.timeline-start {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-top: 1.5rem;
+  padding: 1rem 1.8rem;
+  background: var(--pink);
+  border-radius: 18px;
+}
+
+.timeline-start span {
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.timeline-start strong {
+  color: var(--rose-dark);
+}
+
+/* INTRO */
+
+.timeline-intro {
+  background: var(--paper);
+  border: 1px dashed var(--line);
+  border-radius: 22px;
+  padding: 2rem;
+  text-align: center;
+  margin: 1rem 0 4rem;
+}
+
+.timeline-intro h2,
+.timeline-heading h2,
+.timeline-ending h2 {
+  font-size: 3rem;
+  margin: 0.5rem 0;
+}
+
+.timeline-intro p {
+  color: var(--muted);
+  max-width: 550px;
+  margin: 1rem auto;
+}
+
+.timeline-intro span {
+  color: var(--rose-dark);
+  font-weight: 700;
+}
+
+/* TIMELINE HEADING */
+
+.timeline-heading {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.timeline-heading p {
+  color: var(--muted);
+}
+
+/* TIMELINE STRUCTURE */
+
+.timeline-list {
+  position: relative;
+  padding: 0 0 2rem 2.5rem;
+}
+
+.timeline-list::before {
+  content: "";
+  position: absolute;
+  left: 11px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--line);
+}
+
+/* MEMORY ITEMS */
+
+.timeline-item {
+  position: relative;
+  padding: 0 0 3rem;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -2.5rem;
+  top: 1.5rem;
+  width: 24px;
+  height: 24px;
+  background: var(--rose);
+  border: 4px solid var(--cream);
+  border-radius: 50%;
+  color: white;
+  font-size: 0.65rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.timeline-card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 1.8rem;
+  box-shadow: 0 5px 20px rgba(160, 125, 50, 0.05);
+}
+
+.timeline-date {
+  color: var(--rose-dark);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.timeline-card h3 {
+  font-size: 2.5rem;
+  margin: 0.4rem 0;
+}
+
+.timeline-location {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.timeline-card p {
+  color: var(--ink);
+}
+
+.timeline-signature {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px dashed var(--line);
+  color: var(--rose-dark);
+  font-family: "Caveat", cursive;
+  font-size: 1.5rem;
+}
+
+/* OPTIONAL MEMORY PHOTOS */
+
+.timeline-photo {
+  width: 100%;
+  display: block;
+  margin-top: 1.5rem;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+/* FUTURE MEMORIES */
+
+.timeline-future {
+  background: #fff6d9;
+  border: 1px dashed #e6c978;
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.timeline-future-icon {
+  font-size: 2.5rem;
+}
+
+.timeline-future h3 {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+
+.timeline-future p {
+  color: #80652e;
+}
+
+.timeline-future span {
+  color: var(--rose-dark);
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+/* ENDING */
+
+.timeline-ending {
+  text-align: center;
+  padding: 4rem 1rem 2rem;
+}
+
+.timeline-ending > div {
+  font-size: 2.5rem;
+}
+
+.timeline-ending p {
+  max-width: 500px;
+  margin: 1rem auto;
+  color: var(--muted);
+}
+
+.timeline-ending span {
+  color: var(--rose-dark);
+  font-weight: 700;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  .timeline-page {
+    padding: 0 1rem 3rem;
+  }
+
+  .timeline-hero {
+    padding: 3.5rem 0 2rem;
+  }
+
+  .timeline-intro {
+    padding: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .timeline-list {
+    padding-left: 2rem;
+  }
+
+  .timeline-marker {
+    left: -2rem;
+  }
+
+  .timeline-card {
+    padding: 1.3rem;
+  }
+
+  .timeline-card h3 {
+    font-size: 2.1rem;
+  }
+
+  .timeline-intro h2,
+  .timeline-heading h2,
+  .timeline-ending h2 {
+    font-size: 2.5rem;
+  }
+
+  .timeline-future {
+    padding: 1.5rem;
+  }
+}
