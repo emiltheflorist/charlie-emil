@@ -1,21 +1,60 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Galerie ♡</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
-<body>
-<article>
-  <header>
+    <link rel="stylesheet" href="galerie.css">
+</head>
+
+<body class="galerie-page">
+
     <div id="navbar-placeholder"></div>
-    <h1>Galerie</h1>
-    <p>Posted by Emil Beaudet</p>
-    <p>All of our photos/videos!</p>
-  </header>
-  <p>Yet to come....</p>
-</article>
-    
-<script src="/navbar.js"></script>
+
+    <main class="gallery-container">
+
+        <header class="gallery-header">
+            <h1>Galerie <span>♡</span></h1>
+            <p>All the little moments that make our story.</p>
+        </header>
+
+        <div id="gallery"></div>
+
+    </main>
+
+    <!-- Fullscreen photo viewer -->
+    <div class="photo-viewer" id="photo-viewer">
+
+        <button class="viewer-close" id="viewer-close" aria-label="Close">×</button>
+
+        <button class="viewer-arrow viewer-prev" id="viewer-prev" aria-label="Previous photo">‹</button>
+
+        <div class="viewer-content">
+            <img id="viewer-image" src="" alt="Memory">
+
+            <div class="viewer-info">
+                <p id="viewer-date"></p>
+                <button id="memory-toggle">♡ Read this memory</button>
+                <div id="memory-note" hidden></div>
+            </div>
+        </div>
+
+        <button class="viewer-arrow viewer-next" id="viewer-next" aria-label="Next photo">›</button>
+
+    </div>
+
+    <script src="/navbar.js"></script>
+    <script src="galerie.js"></script>
+
 </body>
 </html>
+
