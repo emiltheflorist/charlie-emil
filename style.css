@@ -3,16 +3,18 @@
    CHARLIE & EMIL — SHARED DESIGN
 ================================= */
 
+
 :root {
-  --cream: #fffaf4;
-  --paper: #fffdf9;
-  --ink: #48353d;
-  --muted: #8b737f;
-  --rose: #dd5c7e;
-  --rose-dark: #bf3f63;
-  --pink: #ffe2ea;
-  --line: #f0d9e2;
+  --cream: #fffdf2;
+  --paper: #fffef9;
+  --ink: #514638;
+  --muted: #94836c;
+  --rose: #e6b94f;
+  --rose-dark: #c99a32;
+  --pink: #fff0bd;
+  --line: #f0e2b9;
 }
+
 
 /* RESET */
 
