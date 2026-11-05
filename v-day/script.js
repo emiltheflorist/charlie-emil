@@ -166,12 +166,25 @@ function handleNoClick() {
 
 function swapGif(src) {
 
-    catGif.style.opacity = "0";
+    const newGif = new Image();
 
-    setTimeout(() => {
-        catGif.src = src;
+    newGif.onload = () => {
+
+        catGif.style.opacity = "0";
+
+        setTimeout(() => {
+            catGif.src = src;
+            catGif.style.opacity = "1";
+        }, 200);
+
+    };
+
+    newGif.onerror = () => {
+        console.error("Could not load GIF:", src);
         catGif.style.opacity = "1";
-    }, 200);
+    };
+
+    newGif.src = src;
 }
 
 // RUNAWAY MODE
