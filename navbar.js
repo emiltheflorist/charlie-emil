@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (!navbar) return;
 
-  fetch("/navbar.html")
+  fetch("/charlie-emil/navbar.html")
     .then(response => {
       if (!response.ok) {
         throw new Error("Could not load navigation");
@@ -18,3 +18,4 @@ document.addEventListener("DOMContentLoaded", function () {
       console.error("Navigation error:", error);
     });
 });
+
