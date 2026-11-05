@@ -1,33 +1,81 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yay! 🎉</title>
+
+    <title>Yay! Charlie said yes! 💛</title>
+
+    <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- SHARED CSS -->
+    <link rel="stylesheet" href="/charlie-emil/style.css">
+
+    <!-- YES PAGE CSS -->
+    <link rel="stylesheet" href="yes.css">
+
+    <!-- CONFETTI -->
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
 </head>
-<body>
+
+<body class="valentine-page yes-page">
+
     <div class="hearts-bg"></div>
 
-    <div class="container yes-container">
-        <h1 class="yes-title">Knew you would say yes! 🎉</h1>
+    <main class="valentine-container yes-container">
 
-        <div class="gif-container">
-            <img id="cat-gif" src="https://media.tenor.com/eNHbizSfVb0AAAAj/lovemode-cute.gif" alt="celebrating">
+        <div class="valentine-decoration">
+            ✨ ♡ ✨
         </div>
 
-        <p class="yes-message">You just made me the happiest person! 💕</p>
-    </div>
+        <span class="valentine-label">
+            THE BEST ANSWER EVER
+        </span>
 
+        <h1 class="yes-title">
+            Knew you would say yes! 🎉
+        </h1>
+
+        <div class="gif-container">
+            <img
+                id="cat-gif"
+                src="https://media.tenor.com/eNHbizSfVb0AAAAj/lovemode-cute.gif"
+                alt="Cute celebrating character"
+            >
+        </div>
+
+        <p class="yes-message">
+            You just made me the happiest person! 💕
+        </p>
+
+        <div class="valentine-footer">
+            made with <span class="heart">♥</span> for Charlie
+        </div>
+
+    </main>
+
+    <!-- MUSIC -->
     <audio id="bg-music" loop>
         <source src="music/beabadoobee - Glue Song (Lyrics).mp3" type="audio/mpeg">
     </audio>
 
-    <button id="music-toggle" onclick="toggleMusic()" title="Toggle music">🔊</button>
+    <button
+        id="music-toggle"
+        onclick="toggleMusic()"
+        title="Toggle music"
+        aria-label="Toggle background music"
+    >
+        🔊
+    </button>
 
     <script src="yes-script.js"></script>
+
 </body>
 </html>
+```
