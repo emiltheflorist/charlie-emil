@@ -3,18 +3,18 @@
    CHARLIE & EMIL — SHARED DESIGN
 ================================= */
 
-
 :root {
   --cream: #fffdf2;
   --paper: #fffef9;
   --ink: #514638;
   --muted: #94836c;
+
   --rose: #e6b94f;
   --rose-dark: #c99a32;
   --pink: #fff0bd;
+
   --line: #f0e2b9;
 }
-
 
 /* RESET */
 
@@ -74,7 +74,7 @@ header p {
   justify-content: center;
   gap: 0.6rem;
   padding: 0.8rem 1rem;
-  background: rgba(255, 253, 249, 0.9);
+  background: rgba(255, 254, 249, 0.95);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--line);
   z-index: 10;
@@ -157,19 +157,6 @@ a {
   transition: color 0.2s ease;
 }
 
-/* MOBILE */
-
-@media (max-width: 600px) {
-  .chapter-nav {
-    gap: 0.3rem;
-  }
-
-  .chapter-nav a {
-    font-size: 0.85rem;
-    padding: 0.35rem 0.6rem;
-  }
-
-
 /* =================================
    FUTURE BABY PAGE
 ================================= */
@@ -247,7 +234,10 @@ a {
 
 .baby-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(220px, 1fr)
+  );
   gap: 1.2rem;
 }
 
@@ -294,7 +284,25 @@ a {
   color: #80652e;
 }
 
+/* =================================
+   MOBILE RESPONSIVE DESIGN
+================================= */
+
 @media (max-width: 600px) {
+
+  .chapter-nav {
+    gap: 0.3rem;
+  }
+
+  .chapter-nav a {
+    font-size: 0.85rem;
+    padding: 0.35rem 0.6rem;
+  }
+
+  main {
+    padding: 0 1rem;
+  }
+
   .baby-page {
     padding: 0 1rem 3rem;
   }
@@ -304,7 +312,3 @@ a {
   }
 }
 
-  main {
-    padding: 0 1rem;
-  }
-}
