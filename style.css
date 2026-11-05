@@ -169,6 +169,141 @@ a {
     padding: 0.35rem 0.6rem;
   }
 
+
+/* =================================
+   FUTURE BABY PAGE
+================================= */
+
+.baby-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5rem 5rem;
+}
+
+.baby-hero {
+  text-align: center;
+  padding: 4rem 1rem 3rem;
+}
+
+.baby-hero .baby-decoration {
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+}
+
+.baby-hero h1 {
+  font-size: clamp(4rem, 10vw, 6rem);
+  margin: 0.5rem 0;
+  color: var(--ink);
+}
+
+.baby-hero p {
+  color: var(--muted);
+  font-size: 1.1rem;
+}
+
+.baby-label {
+  display: inline-block;
+  background: #fff0bd;
+  color: #a47c29;
+  padding: 0.4rem 1rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.baby-intro {
+  background: var(--paper);
+  border: 1px dashed var(--line);
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.baby-intro h2 {
+  font-size: 2.8rem;
+  margin-top: 0;
+}
+
+.baby-intro p {
+  color: var(--muted);
+}
+
+.baby-section-title {
+  text-align: center;
+  margin: 3rem 0 2rem;
+}
+
+.baby-section-title h2 {
+  font-size: 3.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.baby-section-title p {
+  color: var(--muted);
+}
+
+.baby-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2rem;
+}
+
+.baby-card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.baby-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(160, 125, 50, 0.1);
+}
+
+.baby-card .baby-icon {
+  font-size: 2.5rem;
+}
+
+.baby-card h3 {
+  font-size: 1.8rem;
+  margin: 0.5rem 0;
+}
+
+.baby-card p {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.baby-note {
+  background: #fff6d9;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-top: 3rem;
+  text-align: center;
+  transform: rotate(-1deg);
+}
+
+.baby-note p {
+  font-family: "Caveat", cursive;
+  font-size: 1.7rem;
+  color: #80652e;
+}
+
+@media (max-width: 600px) {
+  .baby-page {
+    padding: 0 1rem 3rem;
+  }
+
+  .baby-intro {
+    padding: 1.5rem;
+  }
+}
+
   main {
     padding: 0 1rem;
   }
