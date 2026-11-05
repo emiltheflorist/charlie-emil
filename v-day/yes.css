@@ -1,0 +1,178 @@
+```css
+/* =================================
+   VALENTINE YES PAGE
+================================= */
+
+.yes-page {
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at top, #fff4ce, transparent 55%),
+        var(--cream);
+    overflow-x: hidden;
+}
+
+/* BACKGROUND */
+
+.yes-page .hearts-bg {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.35;
+    background-image:
+        radial-gradient(#e6b94f 1.5px, transparent 1.5px);
+    background-size: 35px 35px;
+}
+
+/* MAIN CARD */
+
+.yes-container {
+    position: relative;
+    z-index: 1;
+    max-width: 650px;
+    width: calc(100% - 2rem);
+    margin: 4rem auto;
+    padding: clamp(2rem, 6vw, 4rem);
+
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 30px;
+
+    box-shadow: 0 15px 45px rgba(160, 125, 50, 0.09);
+
+    text-align: center;
+
+    animation: appear 0.8s ease both;
+}
+
+/* DECORATION */
+
+.valentine-decoration {
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* LABEL */
+
+.valentine-label {
+    color: var(--rose-dark);
+    font-family: "Quicksand", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+}
+
+/* TITLE */
+
+.yes-title {
+    font-family: "Caveat", cursive;
+    font-size: clamp(3rem, 9vw, 5rem);
+    line-height: 1;
+    margin: 1.5rem 0;
+    color: var(--ink);
+}
+
+/* GIF */
+
+.gif-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+}
+
+.gif-container img {
+    width: min(100%, 260px);
+    height: auto;
+    object-fit: contain;
+    border-radius: 20px;
+}
+
+/* MESSAGE */
+
+.yes-message {
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--muted);
+    margin-top: 1.5rem;
+}
+
+/* FOOTER */
+
+.valentine-footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px dashed var(--line);
+    color: var(--muted);
+    font-family: "Quicksand", sans-serif;
+    font-size: 0.9rem;
+}
+
+.heart {
+    color: var(--rose);
+}
+
+/* MUSIC BUTTON */
+
+#music-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 20;
+
+    width: 52px;
+    height: 52px;
+
+    border: 1px solid var(--line);
+    border-radius: 50%;
+
+    background: var(--paper);
+
+    font-size: 1.3rem;
+    cursor: pointer;
+
+    box-shadow: 0 4px 15px rgba(160, 125, 50, 0.12);
+
+    transition: transform 0.2s ease;
+}
+
+#music-toggle:hover {
+    transform: scale(1.1);
+}
+
+/* ENTRANCE ANIMATION */
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .yes-container {
+        margin: 2rem auto;
+        padding: 2rem 1.2rem;
+        border-radius: 22px;
+    }
+
+    .yes-title {
+        font-size: 3.2rem;
+    }
+
+    .gif-container img {
+        max-width: 210px;
+    }
+
+}
+```
