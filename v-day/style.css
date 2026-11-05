@@ -197,3 +197,28 @@
 
 }
 
+/* TOAST ANIMATION */
+
+#tease-toast {
+    min-height: 35px;
+    padding: 0.5rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#tease-toast.show {
+    opacity: 1;
+}
+
+/* GIF TRANSITION */
+
+#cat-gif {
+    transition: opacity 0.2s ease;
+}
+
+/* RUNAWAY BUTTON */
+
+#no-btn {
+    transition: transform 0.2s ease;
+}
+
