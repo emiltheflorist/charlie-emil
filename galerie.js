@@ -1,14 +1,13 @@
-
 const photos = [
     {
         src: "image/fev/18.jpg",
         date: "2026-02-18",
-        memory: "Our first photo in the gallery. A moment I never want to forget. ♡"
+        memory: "Our first photos in the gallery. Also the first time meeting IRL! A moment I never want to forget. ♡"
     },
     {
         src: "images/fev/18(2).jpg",
         date: "2026-02-18",
-        memory: "I love how happy we look here. One of my favourite memories."
+        memory: "Our first photos in the gallery. Also the first time meeting IRL! A moment I never want to forget. ♡"
     },
     {
         src: "images/fev/21.jpg",
