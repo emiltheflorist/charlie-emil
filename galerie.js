@@ -96,10 +96,10 @@ const photos = [
         memory: "Another memory added to our little story. ♡"
      },
     {
-    src: "/charlie-emil/image/avr/16.jpg",
-    date: "2026-04-16",
-    memory: "Another memory added to our little story. ♡"
-}
+        src: "/charlie-emil/image/avr/16.jpg",
+        date: "2026-04-16",
+        memory: "Another memory added to our little story. ♡"
+    }
 ];
 
 const gallery = document.getElementById("gallery");
