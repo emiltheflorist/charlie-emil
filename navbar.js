@@ -46,8 +46,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 <audio id="couple-music" preload="metadata">
                     <source
-                        src="/charlie-emil/music/beabadoobee%20-%20Glue%20Song%20(Lyrics).mp3"
-                        type="audio/mpeg"
+                    src="/charlie-emil/music/beabadoobee%20-%20Glue%20Song%20Lyrics.mp3"
+                    type="audio/mpeg"
                     >
                 </audio>
             </div>
