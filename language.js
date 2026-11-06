@@ -1,3 +1,4 @@
+
 const translations = {
     en: {
         "nav.home": "Home",
@@ -107,21 +108,82 @@ const translations = {
 
         "sunshine.title": "Notre rayon de soleil | Charlie & Emil",
         "gibby.title": "Gibby | Charlie & Emil"
+    },
+
+    zh: {
+        "nav.home": "首页",
+        "nav.timeline": "我们的故事",
+        "nav.baby": "未来的宝宝",
+        "nav.sunshine": "我们的小太阳",
+        "nav.gallery": "照片集",
+        "nav.gibby": "Gibby",
+
+        "home.title": "Charlie & Emil | 我们的故事",
+        "home.heading": "Charlie & Emil",
+        "home.subtitle": "一本记录我们爱情的小书",
+        "home.footer": "为我们两人用心制作 ♥",
+        "home.top": "回到顶部！",
+
+        "timeline.title": "我们的旅程 | Charlie & Emil",
+        "timeline.heading": "我们的共同旅程",
+        "timeline.subtitle": "每一个小小的瞬间都值得珍藏。",
+        "timeline.start": "我们的故事从这里开始",
+        "timeline.chapter": "一章又一章",
+        "timeline.memories": "我们的回忆",
+        "timeline.description": "一起看看我们的故事是如何开始的。",
+        "timeline.meet": "我们的初次相遇",
+        "timeline.beginning": "属于我们的开始",
+        "timeline.meetText": "我们在情人节那天通过 Hinge 认识。我们一拍即合，不久后便开始约会了！",
+        "timeline.signature": "我们的故事，就此开始 ♡",
+        "timeline.ending": "致未来的每一个篇章……",
+        "timeline.endingText": "愿我们珍惜已经创造的回忆、正在创造的回忆，以及所有未来等待着我们的美好时光。",
+        "timeline.back": "回到我们的故事！",
+
+        "baby.title": "未来的宝宝 | Charlie & Emil",
+        "baby.subtitle": "属于我们的小小梦想",
+        "baby.wishlist": "我们的小小愿望清单",
+        "baby.heading": "为我们的小太阳准备的礼物",
+        "baby.registry": "宝宝礼物清单",
+        "baby.description": "我们收集了一些小小的心愿，希望能为未来的小太阳提前准备好。",
+        "baby.expected": "预计日期：2028年10月",
+        "baby.button": "看看我们的愿望清单 ♡",
+        "baby.small": "打开我们的 Amazon 宝宝礼物清单",
+        "baby.note": "虽然我们还没有见到你，但我们已经有满满的爱想要给你。",
+        "baby.footer": "为我们的小小未来用心制作 ♥",
+        "baby.back": "回到我们的故事",
+
+        "gallery.title": "照片集 ♡ | Charlie & Emil",
+        "gallery.subtitle": "记录我们爱情故事中的每一个小小瞬间。",
+        "gallery.read": "♡ 阅读这段回忆",
+        "gallery.hide": "♡ 收起这段回忆",
+        "gallery.empty": "还没有添加回忆。♡",
+        "gallery.close": "关闭",
+        "gallery.previous": "上一张照片",
+        "gallery.next": "下一张照片",
+
+        "sunshine.title": "我们的小太阳 | Charlie & Emil",
+        "gibby.title": "Gibby | Charlie & Emil"
     }
 };
 
+
+// Get the saved language
 function getSavedLanguage() {
-    return localStorage.getItem("charlieEmilLanguage") || "en";
+    const saved = localStorage.getItem("charlieEmilLanguage");
+    return translations[saved] ? saved : "en";
 }
 
+
+// Change language
 function setLanguage(language) {
     if (!translations[language]) return;
 
     localStorage.setItem("charlieEmilLanguage", language);
-
     applyLanguage(language);
 }
 
+
+// Apply translations
 function applyLanguage(language = getSavedLanguage()) {
     const dictionary = translations[language];
 
@@ -129,7 +191,10 @@ function applyLanguage(language = getSavedLanguage()) {
 
     document.documentElement.lang = language;
 
-    // Translate regular page text
+    window.currentLanguage = language;
+    window.siteTranslations = translations;
+
+    // Translate page text
     document.querySelectorAll("[data-i18n]").forEach(element => {
         const key = element.dataset.i18n;
 
@@ -138,7 +203,7 @@ function applyLanguage(language = getSavedLanguage()) {
         }
     });
 
-    // Translate placeholders, alt text, and other attributes
+    // Translate attributes
     document.querySelectorAll("[data-i18n-attr]").forEach(element => {
         const settings = element.dataset.i18nAttr.split("|");
 
@@ -151,23 +216,23 @@ function applyLanguage(language = getSavedLanguage()) {
         });
     });
 
-    // Translate the page title
+    // Translate page title
     const titleKey = document.body.dataset.titleKey;
 
     if (titleKey && dictionary[titleKey]) {
         document.title = dictionary[titleKey];
     }
 
-    // Update language button appearance
-    const enButton = document.getElementById("language-en");
-    const frButton = document.getElementById("language-fr");
+    // Update language buttons
+    ["en", "fr", "zh"].forEach(lang => {
+        const button = document.getElementById(`language-${lang}`);
 
-    if (enButton && frButton) {
-        enButton.classList.toggle("active", language === "en");
-        frButton.classList.toggle("active", language === "fr");
-    }
+        if (button) {
+            button.classList.toggle("active", language === lang);
+        }
+    });
 
-    // Let other scripts know the language changed
+    // Notify other scripts
     document.dispatchEvent(
         new CustomEvent("languageChanged", {
             detail: { language }
@@ -175,23 +240,23 @@ function applyLanguage(language = getSavedLanguage()) {
     );
 }
 
-// Language buttons
+
+// Connect language buttons
 function connectLanguageButtons() {
-    const enButton = document.getElementById("language-en");
-    const frButton = document.getElementById("language-fr");
+    ["en", "fr", "zh"].forEach(lang => {
+        const button = document.getElementById(`language-${lang}`);
 
-    if (enButton) {
-        enButton.addEventListener("click", () => setLanguage("en"));
-    }
-
-    if (frButton) {
-        frButton.addEventListener("click", () => setLanguage("fr"));
-    }
+        if (button && !button.dataset.languageBound) {
+            button.addEventListener("click", () => setLanguage(lang));
+            button.dataset.languageBound = "true";
+        }
+    });
 
     applyLanguage();
-    window.currentLanguage = language;
-    window.siteTranslations = translations;
 }
 
+
+// Initialize language system
 document.addEventListener("DOMContentLoaded", connectLanguageButtons);
 document.addEventListener("navbarLoaded", connectLanguageButtons);
+
