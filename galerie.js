@@ -92,23 +92,40 @@ const memoryNote = document.getElementById("memory-note");
 let currentPhotoIndex = 0;
 
 // Format dates
+
+function getGalleryLocale() {
+    return window.currentLanguage === "fr" ? "fr-CA" : "en-CA";
+}
+
 function formatMonth(dateString) {
     const [year, month] = dateString.split("-").map(Number);
 
-    return new Date(year, month - 1, 1).toLocaleDateString("en", {
-        month: "long",
-        year: "numeric"
-    });
+    return new Date(year, month - 1, 1).toLocaleDateString(
+        getGalleryLocale(),
+        {
+            month: "long",
+            year: "numeric"
+        }
+    );
 }
 
 function formatDate(dateString) {
     const [year, month, day] = dateString.split("-").map(Number);
 
-    return new Date(year, month - 1, day).toLocaleDateString("en", {
-        month: "long",
-        day: "numeric",
-        year: "numeric"
-    });
+    return new Date(year, month - 1, day).toLocaleDateString(
+        getGalleryLocale(),
+        {
+            month: "long",
+            day: "numeric",
+            year: "numeric"
+        }
+    );
+}
+
+function galleryText(key) {
+    return window.siteTranslations?.[
+        window.currentLanguage || "en"
+    ]?.[key] || "";
 }
 
 // Sort newest photos first
