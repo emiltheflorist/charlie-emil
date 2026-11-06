@@ -79,7 +79,26 @@ const photos = [
         src: "/charlie-emil/image/mars/16(4).jpg",
         date: "2026-03-16",
         memory: "Another memory added to our little story. ♡"
-    }
+    },
+    {
+        src: "/charlie-emil/image/mars/22.jpg",
+        date: "2026-03-22",
+        memory: "Another memory added to our little story. ♡"
+     },
+    {
+        src: "/charlie-emil/image/mars/30.jpg",
+        date: "2026-03-30",
+        memory: "Another memory added to our little story. ♡"
+     },
+    {
+        src: "/charlie-emil/image/mars/30(2).jpg",
+        date: "2026-03-30",
+        memory: "Another memory added to our little story. ♡"
+     },
+    {
+        src: "/charlie-emil/image/avr/16.jpg",
+        date: "2026-04-16",
+        memory: "Another memory added to our little story. ♡"
 ];
 
 const gallery = document.getElementById("gallery");
