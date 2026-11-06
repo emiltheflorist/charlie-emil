@@ -1,7 +1,7 @@
 
 const photos = [
     {
-        src: "images/1000001218.jpg.jpg",
+        src: "images/1000001218.jpg",
         date: "2026-11-05",
         memory: "Our first photo in the gallery. A moment I never want to forget. ♡"
     },
