@@ -241,8 +241,6 @@ viewer.addEventListener("click", event => {
     if (event.target === viewer) {
         closeViewer();
     }
-});
-
 document.addEventListener("keydown", event => {
     if (!viewer.classList.contains("active")) return;
 
@@ -255,4 +253,16 @@ document.addEventListener("keydown", event => {
     }
 });
 
-renderGallery();
+document.addEventListener("languageChanged", () => {
+    if (viewer.classList.contains("active")) {
+        viewerDate.textContent = formatDate(
+            photos[currentPhotoIndex].date
+        );
+
+        memoryToggle.textContent = memoryNote.hidden
+            ? galleryText("gallery.read")
+            : galleryText("gallery.hide");
+    }
+
+    renderGallery();
+});
