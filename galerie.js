@@ -6,20 +6,81 @@ const photos = [
         memory: "Our first photo in the gallery. A moment I never want to forget. ♡"
     },
     {
-        src: "images/photo-2.jpg",
-        date: "2026-11-05",
+        src: "images/fev/18(2).jpg",
+        date: "2026-02-18",
         memory: "I love how happy we look here. One of my favourite memories."
     },
     {
-        src: "images/photo-3.jpg",
-        date: "2026-10-18",
+        src: "images/fev/21.jpg",
+        date: "2026-02-21",
         memory: "A little moment together that meant so much to me."
     },
     {
-        src: "images/photo-4.jpg",
-        date: "2026-09-12",
+        src: "images/fev/21(2).jpg",
+        date: "2026-02-21",
+        memory: "Another memory added to our little story. ♡"
+    },
+    {
+        src: "images/fev/21(3).jpg",
+        date: "2026-02-21",
+        memory: "Another memory added to our little story. ♡"
+    },
+    {
+        src: "images/fev/26.jpg",
+        date: "2026-02-26",
+        memory: "Another memory added to our little story. ♡"
+    },
+    {
+        src: "images/fev/26(2).jpg",
+        date: "2026-02-26",
+        memory: "Another memory added to our little story. ♡"
+    },
+    {
+        src: "images/fev/26(3).jpg",
+        date: "2026-02-26",
+        memory: "Another memory added to our little story. ♡"
+    },
+    {
+        src: "images/mars/2.jpg",
+        date: "2026-03-02",
+        memory: "Another memory added to our little story. ♡"
+    },
+    {
+        src: "images/mars/2(2).jpg",
+        date: "2026-03-02",
+        memory: "Another memory added to our little story. ♡"
+    },
+    {
+        src: "images/mars/2(3).jpg",
+        date: "2026-03-02",
+        memory: "Another memory added to our little story. ♡"
+    },
+    {
+        src: "images/mars/15.jpg",
+        date: "2026-03-15",
+        memory: "Another memory added to our little story. ♡"
+    },
+    {
+        src: "images/mars/16.jpg",
+        date: "2026-03-16",
+        memory: "Another memory added to our little story. ♡"
+    },
+    {
+        src: "images/mars/16(2).jpg",
+        date: "2026-03-16",
+        memory: "Another memory added to our little story. ♡"
+    },
+    {
+        src: "images/mars/16(3).jpg",
+        date: "2026-03-16",
+        memory: "Another memory added to our little story. ♡"
+    },
+    {
+        src: "images/mars/16(4).jpg",
+        date: "2026-03-16",
         memory: "Another memory added to our little story. ♡"
     }
+
 ];
 
 const gallery = document.getElementById("gallery");
