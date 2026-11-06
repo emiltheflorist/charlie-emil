@@ -163,6 +163,61 @@ const translations = {
 
         "sunshine.title": "我们的小太阳 | Charlie & Emil",
         "gibby.title": "Gibby | Charlie & Emil"
+    },
+    
+    de: {
+        "nav.home": "Startseite",
+        "nav.timeline": "Unsere Geschichte",
+        "nav.baby": "Unser zukünftiges Baby",
+        "nav.sunshine": "Unser Sonnenschein",
+        "nav.gallery": "Galerie",
+        "nav.gibby": "Gibby",
+
+        "home.title": "Charlie & Emil | Unsere Geschichte",
+        "home.heading": "Charlie & Emil",
+        "home.subtitle": "ein kleines Buch unserer Liebe",
+        "home.footer": "mit ♥ für uns beide gemacht",
+        "home.top": "zurück nach oben!",
+
+        "timeline.title": "Unsere Reise | Charlie & Emil",
+        "timeline.heading": "Unsere gemeinsame Reise",
+        "timeline.subtitle": "Jeder kleine Moment zählt.",
+        "timeline.start": "UNSERE GESCHICHTE BEGANN",
+        "timeline.chapter": "KAPITEL FÜR KAPITEL",
+        "timeline.memories": "Unsere Erinnerungen",
+        "timeline.description": "Ein kleiner Einblick in unsere Anfänge.",
+        "timeline.meet": "Wie wir uns kennengelernt haben",
+        "timeline.beginning": "Unser aller Anfang",
+        "timeline.meetText": "Wir haben uns am Valentinstag auf Hinge kennengelernt. Wir haben uns sofort verstanden und kurz darauf angefangen, uns zu daten!",
+        "timeline.signature": "Der Anfang von uns ♡",
+        "timeline.ending": "Auf all die Kapitel, die noch kommen...",
+        "timeline.endingText": "Auf die Erinnerungen, die wir geschaffen haben, die wir gerade schaffen und auf all die schönen Momente, die noch vor uns liegen.",
+        "timeline.back": "zurück zu unserer Geschichte!",
+
+        "baby.title": "Unser zukünftiges Baby | Charlie & Emil",
+        "baby.subtitle": "Ein kleiner Traum von uns",
+        "baby.wishlist": "UNSERE KLEINE WUNSCHLISTE",
+        "baby.heading": "Kleine Dinge für unseren Sonnenschein",
+        "baby.registry": "Unsere Baby-Wunschliste",
+        "baby.description": "Wir haben ein paar kleine Dinge gesammelt, die wir gerne für unseren zukünftigen kleinen Sonnenschein bereithalten möchten.",
+        "baby.expected": "Voraussichtlicher Termin: Oktober 2028",
+        "baby.button": "Unsere Wunschliste ansehen ♡",
+        "baby.small": "Öffnet unsere Amazon-Baby-Wunschliste",
+        "baby.note": "Wir haben dich noch nicht kennengelernt, aber wir haben schon jetzt so viel Liebe für dich.",
+        "baby.footer": "mit ♥ für unsere kleine Zukunft gemacht",
+        "baby.back": "Zurück zu unserer Geschichte",
+
+        "gallery.title": "Galerie ♡ | Charlie & Emil",
+        "gallery.subtitle": "All die kleinen Momente, die unsere Geschichte ausmachen.",
+        "gallery.read": "♡ Diese Erinnerung lesen",
+        "gallery.hide": "♡ Erinnerung verbergen",
+        "gallery.empty": "Noch keine Erinnerung hinzugefügt. ♡",
+        "gallery.close": "Schließen",
+        "gallery.previous": "Vorheriges Foto",
+        "gallery.next": "Nächstes Foto",
+
+        "sunshine.title": "Unser Sonnenschein | Charlie & Emil",
+        "gibby.title": "Gibby | Charlie & Emil"
     }
 };
 
