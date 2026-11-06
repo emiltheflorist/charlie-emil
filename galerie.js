@@ -1,81 +1,82 @@
+
 const photos = [
     {
-        src: "image/fev/18.jpg",
+        src: "/charlie-emil/image/fev/18.jpg",
         date: "2026-02-18",
         memory: "Our first photos in the gallery. Also the first time meeting IRL! A moment I never want to forget. ♡"
     },
     {
-        src: "image/fev/18(2).jpg",
+        src: "/charlie-emil/image/fev/18(2).jpg",
         date: "2026-02-18",
         memory: "Our first photos in the gallery. Also the first time meeting IRL! A moment I never want to forget. ♡"
     },
     {
-        src: "image/fev/21.jpg",
+        src: "/charlie-emil/image/fev/21.jpg",
         date: "2026-02-21",
         memory: "A little moment together that meant so much to me."
     },
     {
-        src: "image/fev/21(2).jpg",
+        src: "/charlie-emil/image/fev/21(2).jpg",
         date: "2026-02-21",
         memory: "Another memory added to our little story. ♡"
     },
     {
-        src: "image/fev/21(3).jpg",
+        src: "/charlie-emil/image/fev/21(3).jpg",
         date: "2026-02-21",
         memory: "Another memory added to our little story. ♡"
     },
     {
-        src: "image/fev/26.jpg",
+        src: "/charlie-emil/image/fev/26.jpg",
         date: "2026-02-26",
         memory: "Another memory added to our little story. ♡"
     },
     {
-        src: "image/fev/26(2).jpg",
+        src: "/charlie-emil/image/fev/26(2).jpg",
         date: "2026-02-26",
         memory: "Another memory added to our little story. ♡"
     },
     {
-        src: "image/fev/26(3).jpg",
+        src: "/charlie-emil/image/fev/26(3).jpg",
         date: "2026-02-26",
         memory: "Another memory added to our little story. ♡"
     },
     {
-        src: "image/mars/2.jpg",
+        src: "/charlie-emil/image/mars/2.jpg",
         date: "2026-03-02",
         memory: "Another memory added to our little story. ♡"
     },
     {
-        src: "image/mars/2(2).jpg",
+        src: "/charlie-emil/image/mars/2(2).jpg",
         date: "2026-03-02",
         memory: "Another memory added to our little story. ♡"
     },
     {
-        src: "image/mars/2(3).jpg",
+        src: "/charlie-emil/image/mars/2(3).jpg",
         date: "2026-03-02",
         memory: "Another memory added to our little story. ♡"
     },
     {
-        src: "image/mars/15.jpg",
+        src: "/charlie-emil/image/mars/15.jpg",
         date: "2026-03-15",
         memory: "Another memory added to our little story. ♡"
     },
     {
-        src: "image/mars/16.jpg",
+        src: "/charlie-emil/image/mars/16.jpg",
         date: "2026-03-16",
         memory: "Another memory added to our little story. ♡"
     },
     {
-        src: "image/mars/16(2).jpg",
+        src: "/charlie-emil/image/mars/16(2).jpg",
         date: "2026-03-16",
         memory: "Another memory added to our little story. ♡"
     },
     {
-        src: "image/mars/16(3).jpg",
+        src: "/charlie-emil/image/mars/16(3).jpg",
         date: "2026-03-16",
         memory: "Another memory added to our little story. ♡"
     },
     {
-        src: "image/mars/16(4).jpg",
+        src: "/charlie-emil/image/mars/16(4).jpg",
         date: "2026-03-16",
         memory: "Another memory added to our little story. ♡"
     }
@@ -91,7 +92,8 @@ const memoryNote = document.getElementById("memory-note");
 
 let currentPhotoIndex = 0;
 
-// Format dates
+
+// FORMAT DATES
 
 function getGalleryLocale() {
     return window.currentLanguage === "fr" ? "fr-CA" : "en-CA";
@@ -128,10 +130,14 @@ function galleryText(key) {
     ]?.[key] || "";
 }
 
-// Sort newest photos first
+
+// SORT PHOTOS (NEWEST FIRST)
+
 photos.sort((a, b) => b.date.localeCompare(a.date));
 
-// Group photos by month
+
+// DISPLAY GALLERY
+
 function renderGallery() {
     gallery.innerHTML = "";
 
@@ -167,6 +173,10 @@ function renderGallery() {
             img.alt = "A memory";
             img.loading = "lazy";
 
+            img.onerror = () => {
+                console.error("Could not load image:", photo.src);
+            };
+
             button.appendChild(img);
 
             button.addEventListener("click", () => {
@@ -182,7 +192,9 @@ function renderGallery() {
     });
 }
 
-// Open photo
+
+// OPEN PHOTO
+
 function openPhoto(index) {
     currentPhotoIndex = index;
     updateViewer();
@@ -191,7 +203,9 @@ function openPhoto(index) {
     document.body.style.overflow = "hidden";
 }
 
-// Update fullscreen viewer
+
+// UPDATE FULLSCREEN VIEWER
+
 function updateViewer() {
     const photo = photos[currentPhotoIndex];
 
@@ -201,19 +215,24 @@ function updateViewer() {
     memoryNote.textContent = photo.memory || "No memory added yet. ♡";
     memoryNote.hidden = true;
 
-    memoryToggle.textContent = "♡ Read this memory";
+    memoryToggle.textContent =
+        galleryText("gallery.read") || "♡ Read this memory";
 }
 
-// Hide or show memory
+
+// SHOW OR HIDE MEMORY
+
 memoryToggle.addEventListener("click", () => {
     memoryNote.hidden = !memoryNote.hidden;
 
     memoryToggle.textContent = memoryNote.hidden
-        ? "♡ Read this memory"
-        : "♡ Hide memory";
+        ? (galleryText("gallery.read") || "♡ Read this memory")
+        : (galleryText("gallery.hide") || "♡ Hide memory");
 });
 
-// Previous photo
+
+// PREVIOUS PHOTO
+
 document.getElementById("viewer-prev").addEventListener("click", () => {
     currentPhotoIndex =
         (currentPhotoIndex - 1 + photos.length) % photos.length;
@@ -221,7 +240,9 @@ document.getElementById("viewer-prev").addEventListener("click", () => {
     updateViewer();
 });
 
-// Next photo
+
+// NEXT PHOTO
+
 document.getElementById("viewer-next").addEventListener("click", () => {
     currentPhotoIndex =
         (currentPhotoIndex + 1) % photos.length;
@@ -229,7 +250,9 @@ document.getElementById("viewer-next").addEventListener("click", () => {
     updateViewer();
 });
 
-// Close viewer
+
+// CLOSE VIEWER
+
 function closeViewer() {
     viewer.classList.remove("active");
     document.body.style.overflow = "";
@@ -241,17 +264,29 @@ viewer.addEventListener("click", event => {
     if (event.target === viewer) {
         closeViewer();
     }
+});
+
+
+// KEYBOARD NAVIGATION
+
 document.addEventListener("keydown", event => {
     if (!viewer.classList.contains("active")) return;
 
-    if (event.key === "Escape") closeViewer();
+    if (event.key === "Escape") {
+        closeViewer();
+    }
+
     if (event.key === "ArrowRight") {
         document.getElementById("viewer-next").click();
     }
+
     if (event.key === "ArrowLeft") {
         document.getElementById("viewer-prev").click();
     }
 });
+
+
+// LANGUAGE CHANGES
 
 document.addEventListener("languageChanged", () => {
     if (viewer.classList.contains("active")) {
@@ -260,9 +295,15 @@ document.addEventListener("languageChanged", () => {
         );
 
         memoryToggle.textContent = memoryNote.hidden
-            ? galleryText("gallery.read")
-            : galleryText("gallery.hide");
+            ? (galleryText("gallery.read") || "♡ Read this memory")
+            : (galleryText("gallery.hide") || "♡ Hide memory");
     }
 
     renderGallery();
 });
+
+
+// START GALLERY
+
+renderGallery();
+
