@@ -44,12 +44,11 @@ document.addEventListener("DOMContentLoaded", function () {
                     ▶
                 </button>
 
-                <audio id="couple-music" preload="metadata">
-                    <source
-                    src="/charlie-emil/music/beabadoobee%20-%20Glue%20Song%20Lyrics.mp3"
-                    type="audio/mpeg"
-                    >
-                </audio>
+                <audio
+                id="couple-music"
+                preload="auto"
+                src="https://emiltheflorist.github.io/charlie-emil/music/beabadoobee%20-%20Glue%20Song%20Lyrics.mp3"
+                ></audio>
             </div>
         `;
 
