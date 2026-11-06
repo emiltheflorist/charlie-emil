@@ -1,4 +1,3 @@
-
 /* =================================
    CHARLIE & EMIL — SHARED DESIGN
 ================================= */
@@ -680,4 +679,30 @@ a {
   .timeline-future {
     padding: 1.5rem;
   }
+}
+
+.language-switch {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    margin-left: 12px;
+    padding: 4px;
+    border: 1px solid var(--line, #eadfd2);
+    border-radius: 20px;
+}
+
+.language-switch button {
+    border: none;
+    background: transparent;
+    color: var(--muted, #96877f);
+    padding: 6px 10px;
+    border-radius: 15px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.language-switch button.active {
+    background: var(--rose, #e9a1ad);
+    color: white;
 }
