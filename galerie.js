@@ -79,7 +79,6 @@ const photos = [
         date: "2026-03-16",
         memory: "Another memory added to our little story. ♡"
     }
-
 ];
 
 const gallery = document.getElementById("gallery");
