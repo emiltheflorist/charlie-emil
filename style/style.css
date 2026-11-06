@@ -908,3 +908,365 @@ a {
     background: var(--rose, #e9a1ad);
     color: white;
 }
+
+/* =================================
+   OUR SUNSHINE — BABY SCRAPBOOK
+================================= */
+
+.sunshine-page {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1.5rem 4rem;
+}
+
+/* COVER */
+
+.sunshine-cover {
+    text-align: center;
+    padding: 5rem 1rem 4rem;
+    background:
+        radial-gradient(circle at 50% 20%, #fff5c9, transparent 65%);
+    border-bottom: 1px dashed var(--line);
+}
+
+.sunshine-stars {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.sunshine-label,
+.sunshine-small-label {
+    display: inline-block;
+    color: #b18b43;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+}
+
+.sunshine-cover h1 {
+    font-size: clamp(4.5rem, 12vw, 7rem);
+    color: #94733e;
+    margin: 0.5rem 0;
+}
+
+.sunshine-subtitle {
+    color: var(--muted);
+    font-size: 1rem;
+}
+
+.sunshine-cover-heart {
+    color: #d9ad60;
+    font-size: 2.5rem;
+    margin: 1rem;
+}
+
+.sunshine-signature {
+    display: block;
+    font-family: "Caveat", cursive;
+    font-size: 1.5rem;
+    color: #a88b59;
+}
+
+
+/* INTRODUCTION */
+
+.sunshine-intro {
+    max-width: 720px;
+    margin: 3rem auto;
+    padding: 3rem 2rem;
+    text-align: center;
+    background: #fffef9;
+    border: 1px dashed #e9d9ae;
+    border-radius: 25px;
+    box-shadow: 0 8px 25px rgba(160, 130, 75, 0.06);
+}
+
+.sunshine-intro h2,
+.sunshine-heading h2,
+.sunshine-ending h2 {
+    color: #927344;
+    font-size: clamp(2.5rem, 6vw, 3.5rem);
+}
+
+.sunshine-intro p {
+    max-width: 580px;
+    margin: 1rem auto;
+    color: var(--muted);
+}
+
+.sunshine-signoff {
+    margin-top: 2rem;
+    color: #ad8a4d;
+    font-family: "Caveat", cursive;
+    font-size: 1.6rem;
+}
+
+
+/* GENERAL SECTIONS */
+
+.sunshine-section {
+    padding: 4rem 0;
+    border-bottom: 1px dashed var(--line);
+}
+
+.sunshine-heading {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.sunshine-heading h2 {
+    margin: 0.5rem 0;
+}
+
+.sunshine-heading p {
+    color: var(--muted);
+}
+
+
+/* LETTERS */
+
+.sunshine-letter-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.sunshine-letter {
+    padding: 2rem;
+    background: #fffaf0;
+    border: 1px solid #efdfbd;
+    border-radius: 18px;
+    box-shadow: 0 5px 18px rgba(160, 130, 75, 0.06);
+}
+
+.letter-icon {
+    font-size: 2rem;
+}
+
+.letter-label {
+    display: block;
+    margin-top: 1rem;
+    color: #b18b43;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+.sunshine-letter h3 {
+    font-size: 2rem;
+    color: #987a4b;
+    margin: 0.5rem 0;
+}
+
+.sunshine-letter p {
+    color: var(--muted);
+    font-size: 0.93rem;
+}
+
+.letter-signature {
+    display: block;
+    margin-top: 1.5rem;
+    color: #ae8950;
+    font-family: "Caveat", cursive;
+    font-size: 1.4rem;
+}
+
+
+/* DREAM LIST */
+
+.sunshine-dreams {
+    background: rgba(255, 247, 220, 0.35);
+    border-radius: 25px;
+    padding: 3rem 2rem;
+}
+
+.dream-list {
+    max-width: 650px;
+    margin: auto;
+}
+
+.dream-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.8rem 1rem;
+    margin: 0.6rem 0;
+    background: #fffef9;
+    border: 1px solid #f0e4c8;
+    border-radius: 14px;
+}
+
+.dream-item span {
+    font-size: 1.5rem;
+}
+
+.dream-item p {
+    margin: 0;
+    color: var(--muted);
+}
+
+
+/* POLAROID ALBUM */
+
+.sunshine-album {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.sunshine-polaroid {
+    padding: 0.8rem 0.8rem 1.2rem;
+    background: #fffefb;
+    border: 1px solid #eee7d9;
+    box-shadow: 0 7px 18px rgba(100, 80, 45, 0.1);
+    transform: rotate(-2deg);
+    transition: transform 0.25s ease;
+}
+
+.sunshine-polaroid:hover {
+    transform: rotate(0deg) translateY(-5px);
+}
+
+.sunshine-polaroid.polaroid-tilt {
+    transform: rotate(2deg);
+}
+
+.sunshine-polaroid.polaroid-tilt:hover {
+    transform: rotate(0deg) translateY(-5px);
+}
+
+.sunshine-photo-placeholder {
+    min-height: 190px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff7df;
+    color: #b39a6c;
+    text-align: center;
+}
+
+.sunshine-photo-placeholder span {
+    font-size: 2.5rem;
+}
+
+.sunshine-photo-placeholder p {
+    font-size: 0.75rem;
+}
+
+.polaroid-caption {
+    margin: 0.8rem 0 0;
+    text-align: center;
+    color: #917b58;
+    font-family: "Caveat", cursive;
+    font-size: 1.25rem;
+}
+
+
+/* PROMISES */
+
+.sunshine-promises {
+    max-width: 680px;
+    margin: auto;
+    padding: 2rem;
+    background: #fffaf0;
+    border: 1px dashed #e8d7ac;
+    border-radius: 20px;
+}
+
+.sunshine-promises p {
+    margin: 0;
+    padding: 0.8rem 0;
+    color: #8c7653;
+    border-bottom: 1px dashed #eee1c5;
+}
+
+.sunshine-promises p:last-child {
+    border-bottom: none;
+}
+
+
+/* ENDING */
+
+.sunshine-ending {
+    padding: 5rem 1rem 2rem;
+    text-align: center;
+    background: radial-gradient(circle, #fff5ce, transparent 70%);
+}
+
+.ending-sun {
+    font-size: 3rem;
+}
+
+.sunshine-ending h2 {
+    margin: 0.5rem 0;
+}
+
+.sunshine-ending p {
+    max-width: 520px;
+    margin: 1rem auto;
+    color: var(--muted);
+}
+
+.sunshine-ending > span {
+    color: #a68a53;
+    font-weight: 700;
+}
+
+.ending-hearts {
+    margin: 1.5rem 0;
+    color: #d4ad65;
+    font-size: 1.5rem;
+}
+
+.sunshine-ending small {
+    color: var(--muted);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+
+    .sunshine-page {
+        padding: 0 1rem 3rem;
+    }
+
+    .sunshine-cover {
+        padding: 3.5rem 0.5rem;
+    }
+
+    .sunshine-intro {
+        padding: 2rem 1.3rem;
+    }
+
+    .sunshine-letter-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sunshine-album {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+    }
+
+    .sunshine-photo-placeholder {
+        min-height: 140px;
+    }
+
+    .sunshine-dreams {
+        padding: 2rem 1rem;
+    }
+
+    .sunshine-promises {
+        padding: 1.3rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .sunshine-album {
+        grid-template-columns: 1fr;
+        max-width: 260px;
+        margin: auto;
+    }
+}
