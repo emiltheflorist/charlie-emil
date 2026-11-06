@@ -1,4 +1,3 @@
-
 const translations = {
     en: {
         "nav.home": "Home",
@@ -190,6 +189,8 @@ function connectLanguageButtons() {
     }
 
     applyLanguage();
+    window.currentLanguage = language;
+    window.siteTranslations = translations;
 }
 
 document.addEventListener("DOMContentLoaded", connectLanguageButtons);
