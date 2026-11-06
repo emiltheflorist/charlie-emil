@@ -26,7 +26,6 @@ const translations = {
         "timeline.meetText": "We met on Hinge on Valentine's Day. We clicked, and started to date soon after!",
         "timeline.signature": "The beginning of us ♡",
         "timeline.ending": "To all the chapters ahead...",
-        "timeline.endingText": "Here's to the memories we've made, the ones we're making, and all the ones still waiting for us.",
         "timeline.back": "back to our story!",
 
         "baby.title": "Future Baby | Charlie & Emil",
@@ -81,7 +80,6 @@ const translations = {
         "timeline.meetText": "On s'est rencontrés sur Hinge à la Saint-Valentin. Le courant a passé, et on a commencé à se fréquenter peu après !",
         "timeline.signature": "Le début de nous ♡",
         "timeline.ending": "À tous les chapitres à venir...",
-        "timeline.endingText": "À tous les souvenirs qu'on a créés, ceux qu'on crée présentement et tous ceux qui nous attendent.",
         "timeline.back": "retour à notre histoire !",
 
         "baby.title": "Notre futur bébé | Charlie & Emil",
