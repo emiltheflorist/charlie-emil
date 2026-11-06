@@ -9,12 +9,12 @@ document.addEventListener("DOMContentLoaded", function () {
             if (!response.ok) {
                 throw new Error("Could not load navigation");
             }
+
             return response.text();
         })
         .then(html => {
             navbar.innerHTML = html;
 
-            // Tell the language system that the navbar is ready
             document.dispatchEvent(
                 new Event("navbarLoaded")
             );
@@ -23,4 +23,3 @@ document.addEventListener("DOMContentLoaded", function () {
             console.error("Navigation error:", error);
         });
 });
-
