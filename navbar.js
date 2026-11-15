@@ -10,22 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
         extras.id = "site-extras";
 
         extras.innerHTML = `
-            <!-- LITTLE COMPANION -->
-            <div class="love-companion">
-                <div class="companion-message" id="companion-message">
-                    You're loved! ♡
-                </div>
-
-                <button
-                    class="companion-button"
-                    id="companion-button"
-                    aria-label="Talk to our little companion"
-                    title="Click me! ♡"
-                >
-                    💗
-                </button>
-            </div>
-
             <!-- MUSIC PLAYER -->
             <div class="love-music-player">
                 <div class="music-cover">♡</div>
@@ -54,42 +38,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         document.body.appendChild(extras);
 
-        // COMPANION MESSAGES
-        const messages = {
-            en: [
-                "You're loved! ♡",
-                "Charlie + Emil = forever!",
-                "Sending you a little hug!",
-                "You found our little corner of the universe!",
-                "Love lives here. ♡",
-                "Don't forget to smile!"
-            ],
-            fr: [
-                "Tu es aimé(e) ! ♡",
-                "Charlie + Emil = pour toujours !",
-                "Un petit câlin pour toi !",
-                "Bienvenue dans notre petit univers !",
-                "L'amour habite ici. ♡",
-                "N'oublie pas de sourire !"
-            ],
-            zh: [
-                "你值得被爱！♡",
-                "Charlie + Emil = 永远！",
-                "送你一个小拥抱！",
-                "欢迎来到我们的小宇宙！",
-                "这里充满了爱。♡",
-                "别忘了微笑！"
-            ],
-            de: [
-                "Du bist geliebt! ♡",
-                "Charlie + Emil = für immer!",
-                "Eine kleine Umarmung für dich!",
-                "Willkommen in unserer kleinen Welt!",
-                "Hier wohnt die Liebe. ♡",
-                "Vergiss nicht zu lächeln!"
-            ]
-        };
-
         const labels = {
             en: {
                 companion: "Click me! ♡",
@@ -117,11 +65,6 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         };
 
-        const companionButton =
-            document.getElementById("companion-button");
-
-        const companionMessage =
-            document.getElementById("companion-message");
 
         const music = document.getElementById("couple-music");
         const musicToggle = document.getElementById("music-toggle");
@@ -138,7 +81,6 @@ document.addEventListener("DOMContentLoaded", function () {
             const language = getLanguage();
             const words = labels[language];
 
-            companionButton.title = words.companion;
             musicStatus.textContent = words.status;
 
             musicToggle.setAttribute(
@@ -146,34 +88,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 music.paused ? words.play : words.pause
             );
         }
-
-        // COMPANION CLICK
-        companionButton.addEventListener("click", function () {
-            const language = getLanguage();
-            const availableMessages = messages[language];
-
-            let nextMessage;
-
-            do {
-                nextMessage = Math.floor(
-                    Math.random() * availableMessages.length
-                );
-            } while (
-                availableMessages.length > 1 &&
-                nextMessage === currentMessage
-            );
-
-            currentMessage = nextMessage;
-
-            companionMessage.textContent =
-                availableMessages[currentMessage];
-
-            companionMessage.classList.add("show");
-
-            companionButton.classList.remove("bounce");
-            void companionButton.offsetWidth;
-            companionButton.classList.add("bounce");
-        });
 
         // MUSIC PLAY / PAUSE
         musicToggle.addEventListener("click", async function () {
