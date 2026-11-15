@@ -138,7 +138,7 @@ const translations = {
         "gallery.close": "Schließen",
         "gallery.previous": "Vorheriges Foto",
         "gallery.next": "Nächstes Foto",
-    }
+    },
 };
 
 
@@ -218,7 +218,7 @@ function applyLanguage(language = getSavedLanguage()) {
 
 // Connect language buttons
 function connectLanguageButtons() {
-    ["en", "fr", "zh", "de"].forEach(lang => {
+    ["en", "fr", "zh", "de",].forEach(lang => {
         const button = document.getElementById(`language-${lang}`);
 
         if (button && !button.dataset.languageBound) {
