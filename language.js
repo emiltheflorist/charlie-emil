@@ -2,11 +2,8 @@
 const translations = {
     en: {
         "nav.home": "Home",
-        "nav.timeline": "Our Timeline",
         "nav.baby": "Future Baby",
-        "nav.sunshine": "Our Sunshine",
         "nav.gallery": "Galerie",
-        "nav.gibby": "Gibby",
 
         "home.title": "Charlie & Emil | Our Story",
         "home.heading": "Charlie & Emil",
@@ -14,27 +11,14 @@ const translations = {
         "home.footer": "made with ♥ for us two",
         "home.top": "back to the top!",
 
-        "timeline.title": "Our Journey | Charlie & Emil",
-        "timeline.heading": "Our Journey Together",
-        "timeline.subtitle": "Every little moment matters.",
-        "timeline.start": "OUR STORY BEGAN",
-        "timeline.chapter": "CHAPTER BY CHAPTER",
-        "timeline.memories": "Our memories",
-        "timeline.description": "A little look at how it all began.",
-        "timeline.meet": "How We Met",
-        "timeline.beginning": "Our very beginning",
-        "timeline.meetText": "We met on Hinge on Valentine's Day. We clicked, and started to date soon after!",
-        "timeline.signature": "The beginning of us ♡",
-        "timeline.ending": "To all the chapters ahead...",
-        "timeline.back": "back to our story!",
-
+        
         "baby.title": "Future Baby | Charlie & Emil",
         "baby.subtitle": "A little dream of ours",
         "baby.wishlist": "OUR LITTLE WISHLIST",
         "baby.heading": "Things for our sunshine",
         "baby.registry": "Our Baby Registry",
         "baby.description": "We've gathered some little things we'd love to have ready for our future little sunshine.",
-        "baby.expected": "Expected date: October 2028",
+        "baby.expected": "Expected date: October 2032",
         "baby.button": "Explore our wishlist ♡",
         "baby.small": "Opens our Amazon baby registry",
         "baby.note": "We haven't met you yet, but we already have so much love to give you.",
@@ -49,18 +33,12 @@ const translations = {
         "gallery.close": "Close",
         "gallery.previous": "Previous photo",
         "gallery.next": "Next photo",
-
-        "sunshine.title": "Our Sunshine | Charlie & Emil",
-        "gibby.title": "Gibby | Charlie & Emil"
     },
 
     fr: {
         "nav.home": "Accueil",
-        "nav.timeline": "Notre parcours",
         "nav.baby": "Notre futur bébé",
-        "nav.sunshine": "Notre rayon de soleil",
         "nav.gallery": "Galerie",
-        "nav.gibby": "Gibby",
 
         "home.title": "Charlie & Emil | Notre histoire",
         "home.heading": "Charlie & Emil",
@@ -68,27 +46,13 @@ const translations = {
         "home.footer": "fait avec ♥ pour nous deux",
         "home.top": "retour en haut !",
 
-        "timeline.title": "Notre parcours | Charlie & Emil",
-        "timeline.heading": "Notre parcours ensemble",
-        "timeline.subtitle": "Chaque petit moment compte.",
-        "timeline.start": "NOTRE HISTOIRE A COMMENCÉ",
-        "timeline.chapter": "CHAPITRE PAR CHAPITRE",
-        "timeline.memories": "Nos souvenirs",
-        "timeline.description": "Un petit aperçu de nos débuts.",
-        "timeline.meet": "Notre rencontre",
-        "timeline.beginning": "Le tout début de nous",
-        "timeline.meetText": "On s'est rencontrés sur Hinge à la Saint-Valentin. Le courant a passé, et on a commencé à se fréquenter peu après !",
-        "timeline.signature": "Le début de nous ♡",
-        "timeline.ending": "À tous les chapitres à venir...",
-        "timeline.back": "retour à notre histoire !",
-
         "baby.title": "Notre futur bébé | Charlie & Emil",
         "baby.subtitle": "Un petit rêve à nous",
         "baby.wishlist": "NOTRE PETITE LISTE DE SOUHAITS",
         "baby.heading": "Pour notre petit rayon de soleil",
         "baby.registry": "Notre liste de bébé",
         "baby.description": "On a rassemblé quelques petites choses qu'on aimerait avoir pour accueillir notre futur petit rayon de soleil.",
-        "baby.expected": "Date prévue : octobre 2028",
+        "baby.expected": "Date prévue : octobre 2032",
         "baby.button": "Voir notre liste de souhaits ♡",
         "baby.small": "Ouvre notre liste de bébé sur Amazon",
         "baby.note": "On ne t'a pas encore rencontré, mais on a déjà tellement d'amour à te donner.",
@@ -103,18 +67,14 @@ const translations = {
         "gallery.close": "Fermer",
         "gallery.previous": "Photo précédente",
         "gallery.next": "Photo suivante",
-
-        "sunshine.title": "Notre rayon de soleil | Charlie & Emil",
-        "gibby.title": "Gibby | Charlie & Emil"
     },
 
     zh: {
         "nav.home": "首页",
         "nav.timeline": "我们的故事",
         "nav.baby": "未来的宝宝",
-        "nav.sunshine": "我们的小太阳",
         "nav.gallery": "照片集",
-        "nav.gibby": "Gibby",
+        
 
         "home.title": "Charlie & Emil | 我们的故事",
         "home.heading": "Charlie & Emil",
@@ -122,20 +82,6 @@ const translations = {
         "home.footer": "为我们两人用心制作 ♥",
         "home.top": "回到顶部！",
 
-        "timeline.title": "我们的旅程 | Charlie & Emil",
-        "timeline.heading": "我们的共同旅程",
-        "timeline.subtitle": "每一个小小的瞬间都值得珍藏。",
-        "timeline.start": "我们的故事从这里开始",
-        "timeline.chapter": "一章又一章",
-        "timeline.memories": "我们的回忆",
-        "timeline.description": "一起看看我们的故事是如何开始的。",
-        "timeline.meet": "我们的初次相遇",
-        "timeline.beginning": "属于我们的开始",
-        "timeline.meetText": "我们在情人节那天通过 Hinge 认识。我们一拍即合，不久后便开始约会了！",
-        "timeline.signature": "我们的故事，就此开始 ♡",
-        "timeline.ending": "致未来的每一个篇章……",
-        "timeline.endingText": "愿我们珍惜已经创造的回忆、正在创造的回忆，以及所有未来等待着我们的美好时光。",
-        "timeline.back": "回到我们的故事！",
 
         "baby.title": "未来的宝宝 | Charlie & Emil",
         "baby.subtitle": "属于我们的小小梦想",
@@ -158,18 +104,12 @@ const translations = {
         "gallery.close": "关闭",
         "gallery.previous": "上一张照片",
         "gallery.next": "下一张照片",
-
-        "sunshine.title": "我们的小太阳 | Charlie & Emil",
-        "gibby.title": "Gibby | Charlie & Emil"
     },
     
     de: {
         "nav.home": "Startseite",
-        "nav.timeline": "Unsere Geschichte",
         "nav.baby": "Unser zukünftiges Baby",
-        "nav.sunshine": "Unser Sonnenschein",
         "nav.gallery": "Galerie",
-        "nav.gibby": "Gibby",
 
         "home.title": "Charlie & Emil | Unsere Geschichte",
         "home.heading": "Charlie & Emil",
@@ -177,28 +117,13 @@ const translations = {
         "home.footer": "mit ♥ für uns beide gemacht",
         "home.top": "zurück nach oben!",
 
-        "timeline.title": "Unsere Reise | Charlie & Emil",
-        "timeline.heading": "Unsere gemeinsame Reise",
-        "timeline.subtitle": "Jeder kleine Moment zählt.",
-        "timeline.start": "UNSERE GESCHICHTE BEGANN",
-        "timeline.chapter": "KAPITEL FÜR KAPITEL",
-        "timeline.memories": "Unsere Erinnerungen",
-        "timeline.description": "Ein kleiner Einblick in unsere Anfänge.",
-        "timeline.meet": "Wie wir uns kennengelernt haben",
-        "timeline.beginning": "Unser aller Anfang",
-        "timeline.meetText": "Wir haben uns am Valentinstag auf Hinge kennengelernt. Wir haben uns sofort verstanden und kurz darauf angefangen, uns zu daten!",
-        "timeline.signature": "Der Anfang von uns ♡",
-        "timeline.ending": "Auf all die Kapitel, die noch kommen...",
-        "timeline.endingText": "Auf die Erinnerungen, die wir geschaffen haben, die wir gerade schaffen und auf all die schönen Momente, die noch vor uns liegen.",
-        "timeline.back": "zurück zu unserer Geschichte!",
-
         "baby.title": "Unser zukünftiges Baby | Charlie & Emil",
         "baby.subtitle": "Ein kleiner Traum von uns",
         "baby.wishlist": "UNSERE KLEINE WUNSCHLISTE",
         "baby.heading": "Kleine Dinge für unseren Sonnenschein",
         "baby.registry": "Unsere Baby-Wunschliste",
         "baby.description": "Wir haben ein paar kleine Dinge gesammelt, die wir gerne für unseren zukünftigen kleinen Sonnenschein bereithalten möchten.",
-        "baby.expected": "Voraussichtlicher Termin: Oktober 2028",
+        "baby.expected": "Voraussichtlicher Termin: Oktober 2032",
         "baby.button": "Unsere Wunschliste ansehen ♡",
         "baby.small": "Öffnet unsere Amazon-Baby-Wunschliste",
         "baby.note": "Wir haben dich noch nicht kennengelernt, aber wir haben schon jetzt so viel Liebe für dich.",
@@ -213,9 +138,6 @@ const translations = {
         "gallery.close": "Schließen",
         "gallery.previous": "Vorheriges Foto",
         "gallery.next": "Nächstes Foto",
-
-        "sunshine.title": "Unser Sonnenschein | Charlie & Emil",
-        "gibby.title": "Gibby | Charlie & Emil"
     }
 };
 
@@ -277,7 +199,7 @@ function applyLanguage(language = getSavedLanguage()) {
     }
 
     // Update language buttons
-    ["en", "fr", "zh"].forEach(lang => {
+    ["en", "fr", "zh", "de",].forEach(lang => {
         const button = document.getElementById(`language-${lang}`);
 
         if (button) {
@@ -296,7 +218,7 @@ function applyLanguage(language = getSavedLanguage()) {
 
 // Connect language buttons
 function connectLanguageButtons() {
-    ["en", "fr", "zh"].forEach(lang => {
+    ["en", "fr", "zh", "de"].forEach(lang => {
         const button = document.getElementById(`language-${lang}`);
 
         if (button && !button.dataset.languageBound) {
